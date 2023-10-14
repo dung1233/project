@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <ul id="itemList">
+    <li>Mục 1</li>
+    <li>Mục 2</li>
+    <li>Mục 3</li>
+  </ul>
+  
+  <button id="addItemButton">Thêm mục</button>
+
+  <script>
+    $(document).ready(function() {
+      $("#addItemButton").click(function() {
+        var newItem = $("<li>").text("Mục mới");
+        $("#itemList").append(newItem);
+      });
+    });
+  </script>
+</body>
+</html>

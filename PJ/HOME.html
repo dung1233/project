@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+        <img src="Project1/logo/logo_transparent-HTT-02.png" height="50" alt="MDB Logo" loading="lazy" />
+      </a>
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="HOME.html">Home</a>
+        </li>
+        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+          <a class="dropdown-item" href="chirmas.html">
+            Christmas Parties</a>
+          <a class="dropdown-item" href="wedding.html">Wedding Production</a>
+          <a class="dropdown-item" href="PRIVATEEVENTS.html">Corporate & Private Events</a>
+          <a class="dropdown-item" href="educational events.html">Educational Events</a>
+        </div>
+        <li class="nav-item">
+          <a class="nav-link" href="Gallry.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contacus.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="feedback.html">Feedback</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">FAQ</a>
+        </li>
+
+
+      </ul>
+      <div class="input-group">
+        <div class="form-outline">
+          <input type="search" id="form1" class="form-control" />
+          <label class="form-label" for="form1">Search</label>
+        </div>
+        <button type="button" class="btn btn-primary">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+
+    <!-- Right elements -->
+    <div class="d-flex align-items-center">
+      <!-- Icon -->
+      <a class="text-reset me-3" href="#">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+
+      <!-- Notifications -->
+      <div class="dropdown">
+        <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+          data-mdb-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-bell"></i>
+          <span class="badge rounded-pill badge-notification bg-danger">1</span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+          <li>
+            <a class="dropdown-item" href="#">Some news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Another news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Avatar -->
+      <div class="dropdown">
+        <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar"
+          role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+          <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25"
+            alt="Black and White Portrait of a Man" loading="lazy" />
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+          <li>
+            <a class="dropdown-item" href="My profile.html">My profile</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Settings</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="logout.html">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Right elements -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+</ <!-- Background image -->
+<div id="intro" class="bg-image" style="
+                  background-image: url(https://mdbcdn.b-cdn.net/img/new/fluid/city/113.jpg);
+                  height: 100vh;       ">
+  <div class="mask text-white" style="background-color: rgba(0, 0, 0, 0.8)">
+    <div class="containe d-flex align-items-center text-center h-100">
+      <div>
+        <img src="Project1/logo/logo_transparent-HTT-02.png" height="50" alt="MDB Logo" loading="lazy" />
+        <h1 class="mb-5">This is title</h1>
+
+        <p style="font-size: 29px;">
+          BOOK IN A CONSULTATION TO MEET ONE OF OUR TEAM
+        </p>
+        <button class="custom-button1">
+          Book Now
+        </button>
+      </div>
+      <div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+<!-- Background image -->
+</header>
+<div class="he">
+  <h1 style="color: #000 ; font-size: 29px;"><strong>WHO ARE JADON MANAGER ?</strong>
+  </h1>
+</div>
+<div class="textone">
+  <div class="text1">
+    <p>JADON MANAGER team form one of the most innovative event management companies in the UK, providing event
+      management all over the world. With over 19 years of experience and expertise, our team will ensure your event
+      runs smoothly from start to finish and is one to remember. We specialise in meeting client requirements and
+      bringing your vision to life with our quality of service and attention to detail. Whether you require just
+      lighting or full event production, we can assist in transforming any size event into a spectacular occasion!</p>
+  </div>
+  <div class="text2">
+    <img class="tti" src="https://beyondcertainty.com/wp-content/uploads/2018/11/BC-main.jpg" alt="" srcset="">
+  </div>
+</div>
+<div class="header1">
+  <hr>
+  <span class="TEXTSPAN"><strong>WHAT WE DO</strong></span>
+</div>
+
+<div class="total1">
+  <div class="image-containerox">
+    <a href="#"><img src="https://beyondcertainty.com/wp-content/uploads/2019/10/gallery-christmas001-800x600.jpg" Ảnh
+        của bạn"></a>
+    <div class="image-text">Beautyfull</div>
+  </div>
+  <div class="image-containerox">
+    <a href="#"><img src="https://beyondcertainty.com/wp-content/uploads/2018/12/featured-audio_visual-800x600.jpg" Ảnh
+        của bạn"></a>
+    <div class="image-text">Audio Visual Lighting & Sound</div>
+  </div>
+  <div class="image-containerox">
+    <a href="#"><img src="https://beyondcertainty.com/wp-content/uploads/2018/12/featured-event_management-800x600.jpg"
+        Ảnh của bạn"></a>
+    <div class="image-text">Image</div>
+  </div>
+</div>
+<div class="total1">
+  <div class="image-containerox">
+    <a href="#"><img src="https://beyondcertainty.com/wp-content/uploads/2018/12/featured-event_production-800x600.jpg"
+        Ảnh của bạn"></a>
+    <div class="image-text">Music</div>
+  </div>
+  <div class="image-containerox">
+    <a href="#"><img src="https://beyondcertainty.com/wp-content/uploads/2018/12/featured-wedding-800x600.jpg" Ảnh của
+        bạn"></a>
+    <div class="image-text">Event Management</div>
+  </div>
+  <div class="image-containerox">
+    <a href="#"><img src="https://beyondcertainty.com/wp-content/uploads/2019/02/corporate-promo-800x600.jpg" Ảnh của
+        bạn"></a>
+    <div class="image-text">CORPORATE&PRIVATE EVENTS</div>
+  </div>
+</div>
+
+<div class="Pro">
+  <h1 class="text1" style="color: black;"><strong>SOME OF OUR WORK</strong>
+  </h1>
+
+  <div class="pro1">
+    <div class="image-container">
+      <img class="imgss" src="Project1/Pictures/wp7488232.jpg" alt="Hình ảnh 1">
+      <div class="overlay">
+        <p>This is some text</p>
+      </div>
+
+      <div class="xem">
+        <p><strong>Wedding</strong></p>
+        <i>Ha Noi 23/08/2023</i>
+      </div>
+      <button id="myButton1" class="custom-button">
+        View this Wedding
+      </button>
+    </div>
+
+    <div class="image-container">
+      <img class="imgss" src="https://beyondcertainty.com/wp-content/uploads/2018/12/event-conference_trump-18.jpg"
+        alt="Hình ảnh 2">
+      <div class="overlay">
+        <p>This is some text</p>
+      </div>
+      <div class="xem">
+        <p><strong>CORPORATE</strong></p>
+        <i>Conference at The Atlantis, Duba</i>
+      </div>
+      <button id="myButton2" class="custom-button">
+        View this Wedding
+      </button>
+    </div>
+
+    <!-- Hình ảnh 3 -->
+    <div class="image-container">
+      <img class="imgss" src="https://beyondcertainty.com/wp-content/uploads/2018/12/event-50th_anniversary-01.jpg"
+        alt="Hình ảnh 2">
+      <div class="overlay">
+        <p>This is some text</p>
+      </div>
+      <div class="xem">
+        <p><strong>CORPORATE</strong></p>
+        <i>Investor Event at The Trump Turnberry, Scotland</i>
+      </div>
+      <button id="myButton3" class="custom-button">
+        View this Wedding
+      </button>
+    </div>
+  </div>
+
+  <div id="myPopup1" class="popup">
+    <div class="popup-content">
+      <img src="Project1/Pictures/desktop-wallpaper-event-management.jpg" alt="Hình ảnh 1">
+      <h1 style="color: rgb(48, 46, 46);">
+      </h1>
+      <br>
+      <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+        blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
+        cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+      <div class="mytext">
+        <p><strong>Device:</strong> Type 1 </p>
+        <p><strong>Desserts:</strong> Type 2</p>
+        <p><strong>ROOM:</strong> Type 2</p>
+      </div>
+
+      <button id="closePopup1" class="custom-button">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <div id="myPopup2" class="popup">
+    <div class="popup-content">
+      <img src="Project1/Pictures/istockphoto-1309966194-1024x1024.jpg" alt="Hình ảnh 1" width="45%">
+      <h1 style="color: rgb(48, 46, 46);">
+      </h1>
+      <br>
+      <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+        blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
+        cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+      <div class="mytext">
+        <p><strong>Device:</strong> Type 1 </p>
+        <p><strong>Desserts:</strong> Type 2 </p>
+        <p><strong>ROOM:</strong> Type 2</p>
+      </div>
+      <button id="closePopup2" class="custom-button">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <div id="myPopup3" class="popup">
+    <div class="popup-content">
+      <img src="Project1/Pictures/istockphoto-530685719-612x612.jpg" alt="Hình ảnh 1">
+      <h1 style="color: rgb(48, 46, 46);">
+      </h1>
+      <br>
+      <p>this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+        blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
+        cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+      <div class="mytext">
+        <p><strong>Device:</strong> Type 1 </p>
+        <p><strong>Desserts:</strong> Type 2</p>
+        <p><strong>ROOM:</strong> Type 2</p>
+      </div>
+      <button id="closePopup3" class="custom-button">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <!--
+  
+-->
+
+
+  <!--
+  <!--bảng giá các sản phẩm 
+  <div class="mycl">
+    <div></div>
+    <h1 class="textBG">Event Organization Price List</h1>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Type</th>
+        <th>Holiday</th>
+        <th>Special offer</th>
+        <th>Last price</th>
+      </tr>
+      <tr>
+        <td>Event Wedding</td>
+        <td><span class="price">1000</span>VNĐ</td>
+        <td>
+          <select class="price-level" onchange="updatePrice(this)">
+            <option value="re">A</option>
+            <option value="trungbinh">B</option>
+            <option value="dat">C</option>
+          </select>
+        </td>
+        <td><input type="checkbox" class="holiday-discount" onchange="updatePrice(this)"> Holiday</td>
+        <td><input type="checkbox" class="child-discount" onchange="updatePrice(this)"> Children</td>
+        <td><span class="final-price">50</span></td>
+      </tr>
+      <tr class="dat">
+        <td> Promotion Celebration <small>
+        <td><span class="price">700</span>VNĐ</td>
+        <td>
+          <select class="price-level" onchange="updatePrice(this)">
+            <option value="re">A</option>
+            <option value="trungbinh">B</option>
+            <option value="dat">C</option>
+          </select>
+        </td>
+        <td><input type="checkbox" class="holiday-discount" onchange="updatePrice(this)">Holiday</td>
+        <td><input type="checkbox" class="child-discount" onchange="updatePrice(this)"> Children</td>
+        <td><span class="final-price">100</span></td>
+      </tr>
+      <tr class="re">
+        <td>Birthday Party<small>
+          </small></td>
+        <td><span class="price">400</span>VNĐ</td>
+        <td>
+          <select class="price-level" onchange="updatePrice(this)">
+            <option value="re">A</option>
+            <option value="trungbinh">B</option>
+            <option value="dat">C</option>
+          </select>
+        </td>
+        <td><input type="checkbox" class="holiday-discount" onchange="updatePrice(this)">Holiday</td>
+        <td><input type="checkbox" class="child-discount" onchange="updatePrice(this)"> Children</td>
+        <td><span class="final-price">30</span></td>
+      </tr>
+      <tr class="trungbinh">
+        <td>Coming-of-age party</td>
+        <td><span class="price">202</span>VNĐ</td>
+        <td>
+          <select class="price-level" onchange="updatePrice(this)">
+            <option value="re">A</option>
+            <option value="trungbinh">B</option>
+            <option value="dat">C</option>
+          </select>
+        </td>
+        <td><input type="checkbox" class="holiday-discount" onchange="updatePrice(this)">Holiday</td>
+        <td><input type="checkbox" class="child-discount" onchange="updatePrice(this)"> Children</td>
+        <td><span class="final-price">80</span></td>
+      </tr>
+       Thêm các món ăn khác và thông tin tương tự 
+    </table>
+
+    <h1 class="textBG">Equipment Price List</h1>
+    <table>
+      <tr>
+        <th>Tên Thiết Bị</th>
+        <th>Giá Tiền</th>
+        <th>Cấp Giá Tiền</th>
+        <th>Ngày Lễ</th>
+        <th>Khuyến Mãi Trẻ Em</th>
+        <th>Giá Cuối Cùng</th>
+      </tr>
+      <tr>
+        <td>Bàn</td>
+        <td><span class="price">50</span> VNĐ</td>
+        <td>
+          <select class="price-level" onchange="updatePrice(this)">
+            <option value="re">Rẻ</option>
+            <option value="trungbinh">Trung bình</option>
+            <option value="dat">Đắt</option>
+          </select>
+        </td>
+        <td><input type="checkbox" class="holiday-discount" onchange="updatePrice(this)"> Ngày Lễ</td>
+        <td><input type="checkbox" class="child-discount" onchange="updatePrice(this)"> Trẻ Em</td>
+        <td><span class="final-price">50</span> VNĐ</td>
+      </tr>
+      <tr class="dat">
+        <td>Ghế<small>
+            (x4)</small></td>
+        <td><span class="price">25</span> VNĐ</td>
+        <td>
+          <select class="price-level" onchange="updatePrice(this)">
+            <option value="re">Rẻ</option>
+            <option value="trungbinh">Trung bình</option>
+            <option value="dat">Đắt</option>
+          </select>
+        </td>
+        <td><input type="checkbox" class="holiday-discount" onchange="updatePrice(this)"> Ngày Lễ</td>
+        <td><input type="checkbox" class="child-discount" onchange="updatePrice(this)"> Trẻ Em</td>
+        <td><span class="final-price">100</span> VNĐ</td>
+      </tr>
+      <tr class="re">
+        <td>Ánh Sáng<small>
+            (discount)</small></td>
+        <td><span class="price">30</span> VNĐ</td>
+        <td>
+          <select class="price-level" onchange="updatePrice(this)">
+            <option value="re">Rẻ</option>
+            <option value="trungbinh">Trung bình</option>
+            <option value="dat">Đắt</option>
+          </select>
+        </td>
+        <td><input type="checkbox" class="holiday-discount" onchange="updatePrice(this)"> Ngày Lễ</td>
+        <td><input type="checkbox" class="child-discount" onchange="updatePrice(this)"> Trẻ Em</td>
+        <td><span class="final-price">30</span> VNĐ</td>
+      </tr>
+      <tr class="trungbinh">
+        <td>Loa<small>
+            (x4)</small></td>
+        <td><span class="price">20</span> VNĐ</td>
+        <td>
+          <select class="price-level" onchange="updatePrice(this)">
+            <option value="re">Rẻ</option>
+            <option value="trungbinh">Trung bình</option>
+            <option value="dat">Đắt</option>
+          </select>
+        </td>
+        <td><input type="checkbox" class="holiday-discount" onchange="updatePrice(this)"> Ngày Lễ</td>
+        <td><input type="checkbox" class="child-discount" onchange="updatePrice(this)"> Trẻ Em</td>
+        <td><span class="final-price">80</span> VNĐ</td>
+      </tr>
+      <tr class="dat">
+        <td>Máy chiếu <small>
+            (promotion)</small></td>
+        <td><span class="price">120</span> VNĐ</td>
+        <td>
+          <select class="price-level" onchange="updatePrice(this)">
+            <option value="re">Rẻ</option>
+            <option value="trungbinh">Trung bình</option>
+            <option value="dat">Đắt</option>
+          </select>
+        </td>
+        <td><input type="checkbox" class="holiday-discount" onchange="updatePrice(this)"> Ngày Lễ</td>
+        <td><input type="checkbox" class="child-discount" onchange="updatePrice(this)"> Trẻ Em</td>
+        <td><span class="final-price">120</span> VNĐ</td>
+      </tr>
+      <!-- Thêm các món ăn khác và thông tin tương tự 
+    </table>
+    <br>
+    <h1 class="textBG">Dessert Price List</h1>
+    <table>
+      <tr>
+        <th>Tên Món Ăn</th>
+        <th>Giá Gốc</th>
+        <th>Cấp Giá Tiền</th>
+        <th>Ngày Lễ</th>
+        <th>Khuyến Mãi Trẻ Em</th>
+        <th>Giá Cuối Cùng</th>
+      </tr>
+      <tr>
+        <td>Bánh Flan</td>
+        <td><span class="price">50</span> VNĐ</td>
+        <td>
+          <select class="price-level" onchange="updatePrice(this)">
+            <option value="re">Rẻ</option>
+            <option value="trungbinh">Trung bình</option>
+            <option value="dat">Đắt</option>
+          </select>
+        </td>
+        <td><input type="checkbox" class="holiday-discount" onchange="updatePrice(this)"> Ngày Lễ</td>
+        <td><input type="checkbox" class="child-discount" onchange="updatePrice(this)"> Trẻ Em</td>
+        <td><span class="final-price">50</span> VNĐ</td>
+      </tr>
+      <tr class="dat">
+        <td>Kem</td>
+        <td><span class="price">100</span> VNĐ</td>
+        <td>
+          <select class="price-level" onchange="updatePrice(this)">
+            <option value="re">Rẻ</option>
+            <option value="trungbinh">Trung bình</option>
+            <option value="dat">Đắt</option>
+          </select>
+        </td>
+        <td><input type="checkbox" class="holiday-discount" onchange="updatePrice(this)"> Ngày Lễ</td>
+        <td><input type="checkbox" class="child-discount" onchange="updatePrice(this)"> Trẻ Em</td>
+        <td><span class="final-price">100</span> VNĐ</td>
+      </tr>
+      <tr class="re">
+        <td>Bánh Xèo</td>
+        <td><span class="price">30K</span> VNĐ</td>
+        <td>
+          <select class="price-level" onchange="updatePrice(this)">
+            <option value="re">Rẻ</option>
+            <option value="trungbinh">Trung bình</option>
+            <option value="dat">Đắt</option>
+          </select>
+        </td>
+        <td><input type="checkbox" class="holiday-discount" onchange="updatePrice(this)"> Ngày Lễ</td>
+        <td><input type="checkbox" class="child-discount" onchange="updatePrice(this)"> Trẻ Em</td>
+        <td><span class="final-price">30</span> VNĐ</td>
+      </tr>
+      <tr class="trungbinh">
+        <td>Chè (limit)</td>
+        <td><span class="price">80</span> VNĐ</td>
+        <td>
+          <select class="price-level" onchange="updatePrice(this)">
+            <option value="re">Rẻ</option>
+            <option value="trungbinh">Trung bình</option>
+            <option value="dat">Đắt</option>
+          </select>
+        </td>
+        <td><input type="checkbox" class="holiday-discount" onchange="updatePrice(this)"> Ngày Lễ</td>
+        <td><input type="checkbox" class="child-discount" onchange="updatePrice(this)"> Trẻ Em</td>
+        <td><span class="final-price">80</span> VNĐ</td>
+      </tr>
+      <tr class="dat">
+        <td>Tiramisu</td>
+        <td><span class="price">120</span> VNĐ</td>
+        <td>
+          <select class="price-level" onchange="updatePrice(this)">
+            <option value="re">Rẻ</option>
+            <option value="trungbinh">Trung bình</option>
+            <option value="dat">Đắt</option>
+          </select>
+        </td>
+        <td><input type="checkbox" class="holiday-discount" onchange="updatePrice(this)"> Ngày Lễ</td>
+        <td><input type="checkbox" class="child-discount" onchange="updatePrice(this)"> Trẻ Em</td>
+        <td><span class="final-price">120</span> VNĐ</td>
+      </tr>
+       Thêm các món ăn khác và thông tin tương tự 
+    </table>
+  -->
+</div>
+<section class="review">
+  <section style="color: #000;">
+    <div class="container py-5">
+      <h1 style="color: #000;"><strong>Commitment</strong></h1>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-10 col-xl-8 text-center">
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="card-body py-4 mt-2">
+              <div class="d-flex justify-content-center mb-4">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                  class="rounded-circle shadow-1-strong" width="100" height="100" />
+              </div>
+              <h5 class="font-weight-bold">Teresa May</h5>
+              <h6 class="font-weight-bold my-3">Founder at ET Company</h6>
+              <ul class="list-unstyled d-flex justify-content-center">
+                <li>
+                  <i class="fas fa-star fa-sm text-info"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-info"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-info"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-info"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star-half-alt fa-sm text-info"></i>
+                </li>
+              </ul>
+              <p class="mb-2">
+                <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat
+                ad velit ab hic tenetur.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="card-body py-4 mt-2">
+              <div class="d-flex justify-content-center mb-4">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(15).webp"
+                  class="rounded-circle shadow-1-strong" width="100" height="100" />
+              </div>
+              <h5 class="font-weight-bold">Maggie McLoan</h5>
+              <h6 class="font-weight-bold my-3">Photographer at Studio LA</h6>
+              <ul class="list-unstyled d-flex justify-content-center">
+                <li>
+                  <i class="fas fa-star fa-sm text-info"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-info"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-info"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-info"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-info"></i>
+                </li>
+              </ul>
+              <p class="mb-2">
+                <i class="fas fa-quote-left pe-2"></i>Autem, totam debitis suscipit saepe
+                sapiente magnam officiis quaerat necessitatibus odio assumenda perferendis
+                labore laboriosam.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-0">
+          <div class="card">
+            <div class="card-body py-4 mt-2">
+              <div class="d-flex justify-content-center mb-4">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(17).webp"
+                  class="rounded-circle shadow-1-strong" width="100" height="100" />
+              </div>
+              <h5 class="font-weight-bold">Alexa Horwitz</h5>
+              <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6>
+              <ul class="list-unstyled d-flex justify-content-center">
+                <li>
+                  <i class="fas fa-star fa-sm text-info"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-info"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-info"></i>
+                </li>
+                <li>
+                  <i class="fas fa-star fa-sm text-info"></i>
+                </li>
+                <li>
+                  <i class="far fa-star fa-sm text-info"></i>
+                </li>
+              </ul>
+              <p class="mb-2">
+                <i class="fas fa-quote-left pe-2"></i>Cras sit amet nibh libero, in gravida
+                nulla metus scelerisque ante sollicitudin commodo cras purus odio,
+                vestibulum in tempus viverra
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<section class="page-section" id="services">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading text-uppercase">Services</h2>
+      <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+          <svg class="svg-inline--fa fa-circle fa-stack-2x text-primary" aria-hidden="true" focusable="false"
+            data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+            data-fa-i2svg="">
+            <path fill="currentColor"
+              d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"></path>
+          </svg><!-- <i class="fas fa-circle fa-stack-2x text-primary"></i> Font Awesome fontawesome.com -->
+          <svg class="svg-inline--fa fa-cart-shopping fa-stack-1x fa-inverse" aria-hidden="true" focusable="false"
+            data-prefix="fas" data-icon="cart-shopping" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512" data-fa-i2svg="">
+            <path fill="currentColor"
+              d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+            </path>
+          </svg><!-- <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i> Font Awesome fontawesome.com -->
+        </span>
+        <h4 class="my-3">Easy</h4>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
+          quo inventore harum ex magni, dicta impedit.</p>
+      </div>
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+          <svg class="svg-inline--fa fa-circle fa-stack-2x text-primary" aria-hidden="true" focusable="false"
+            data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+            data-fa-i2svg="">
+            <path fill="currentColor"
+              d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"></path>
+          </svg><!-- <i class="fas fa-circle fa-stack-2x text-primary"></i> Font Awesome fontawesome.com -->
+          <svg class="svg-inline--fa fa-laptop fa-stack-1x fa-inverse" aria-hidden="true" focusable="false"
+            data-prefix="fas" data-icon="laptop" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
+            data-fa-i2svg="">
+            <path fill="currentColor"
+              d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z">
+            </path>
+          </svg><!-- <i class="fas fa-laptop fa-stack-1x fa-inverse"></i> Font Awesome fontawesome.com -->
+        </span>
+        <h4 class="my-3">Quicks</h4>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
+          quo inventore harum ex magni, dicta impedit.</p>
+      </div>
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+          <svg class="svg-inline--fa fa-circle fa-stack-2x text-primary" aria-hidden="true" focusable="false"
+            data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+            data-fa-i2svg="">
+            <path fill="currentColor"
+              d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"></path>
+          </svg><!-- <i class="fas fa-circle fa-stack-2x text-primary"></i> Font Awesome fontawesome.com -->
+          <svg class="svg-inline--fa fa-lock fa-stack-1x fa-inverse" aria-hidden="true" focusable="false"
+            data-prefix="fas" data-icon="lock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+            data-fa-i2svg="">
+            <path fill="currentColor"
+              d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z">
+            </path>
+          </svg><!-- <i class="fas fa-lock fa-stack-1x fa-inverse"></i> Font Awesome fontawesome.com -->
+        </span>
+        <h4 class="my-3">Security</h4>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
+          quo inventore harum ex magni, dicta impedit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer style="margin-top: 5%;" class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><a href=""><i class="fas fa-home me-3"></i> New York, NY 10012, US</p></a>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+
+  <!-- Copyright -->
+</footer>
+
+<!-- Copyright -->
+
+<!-- Footer -->
+
+<script src="app.js"></script>
+
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>
